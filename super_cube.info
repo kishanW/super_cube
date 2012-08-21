@@ -5,3 +5,5 @@ regions[header] = Header
 regions[highlights] = Highlights
 regions[content] = Content
 regions[footer] = Footer
+stylesheets[all][] = css/style.css
+scripts[] = js/script.js
