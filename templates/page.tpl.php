@@ -48,7 +48,7 @@
     <div id="main-wrapper"><div id="main" class="clearfix">
 
       <div id="content" class="column"><div class="section">
-        <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
+<!--Page highlited was removed from here -->
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
@@ -60,17 +60,13 @@
         <?php print $feed_icons; ?>
       </div></div> <!-- /.section, /#content -->
 
-      <?php if ($page['sidebar_first']): ?>
-        <div id="sidebar-first" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_first']); ?>
+      <?php if ($page['highlights']): ?>
+        <div id="highlights" class="column sidebar"><div class="section">
+          <?php print render($page['highlights']); ?>
         </div></div> <!-- /.section, /#sidebar-first -->
       <?php endif; ?>
 
-      <?php if ($page['sidebar_second']): ?>
-        <div id="sidebar-second" class="column sidebar"><div class="section">
-          <?php print render($page['sidebar_second']); ?>
-        </div></div> <!-- /.section, /#sidebar-second -->
-      <?php endif; ?>
+<!--Sidebar 2 was removed from here-->
 
     </div></div> <!-- /#main, /#main-wrapper -->
 
@@ -79,4 +75,3 @@
     </div></div> <!-- /.section, /#footer -->
 
   </div></div> <!-- /#page, /#page-wrapper -->
-  <?php print($test); ?>
